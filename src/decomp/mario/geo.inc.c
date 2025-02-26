@@ -17,7 +17,7 @@ void initMarioGeo(unsigned char* rom){
    if (mario_geo_ptr != 0x0){
       return;
    }
-   uintptr_t ptr = convertPtr_follow(rom,0x17002CE0); // 17002CE0 -> mario_geo_load_body
+   uintptr_t ptr = convertPtr_follow(rom,0x17002D48); // 17002CE0 -> mario_geo_load_low_poly_body
    uintptr_t data[]={
       GEO_SHADOW(SHADOW_CIRCLE_PLAYER, 0xB4, 100),
       GEO_OPEN_NODE(),
